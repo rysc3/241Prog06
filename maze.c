@@ -45,10 +45,12 @@ void initializeMaze(char maze[][size])
 {
   char nextChar;
 
-  for (int row = 0; row < size; row++)
+  int row;
+  int col;
+  for (row = 0; row < size; row++)
   {
 
-    for (int col = 0; col < size; col++)
+    for (col = 0; col < size; col++)
     {
 
       scanf("%c", &maze[row][col]);
@@ -60,9 +62,11 @@ void initializeMaze(char maze[][size])
 void outputMaze(char maze[][size])
 {
   printf("The maze is: \n");
-  for (int row = 0; row < size; row++)
+  int row;
+  int col;
+  for (row = 0; row < size; row++)
   {
-    for (int col = 0; col < size; col++)
+    for (col = 0; col < size; col++)
 
       printf("%c", maze[row][col]);
 
